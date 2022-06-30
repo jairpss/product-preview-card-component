@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+/* Colors */
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --button-hover-color: hsl(158, 48%, 19%);
+    --title-font: 'Fraunces', serif;
+    --text-font: 'Montserrat', sans-serif;   
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    border-radius:10px;
+    max-width: 580px;
+    margin-top: 150px;
+}
+
+main img{
+    width: 280px;
+    border-radius:10px 0 0 10px;
+}
+
+.info{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3{
+    font-family: var(--text-font);
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
+    font-weight: 500; 
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.info h1{
+    font-family: var(--title-font);
+    color: var(--very-dark-blue);
+    margin-bottom: 18px;
+}
+
+.info-text{
+    font-family: var(--text-font);
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.info-price{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.info-price h2{
+    font-family: var(--title-font);
+    color: var(--dark-cyan);
+    font-size: 32px;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.info-price p{
+    font-family: var(--text-font);
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+    
+}
+
+button{
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+}
+
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 590px) {
+    main{
+        flex-direction: column;
+        max-width: auto;
+        margin-top: 50px;
+    }
+}
